@@ -1,6 +1,11 @@
 <link href="../whirlwind.css" rel="stylesheet">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+
+<whirlheader>
+    <p>pretzeledkoala</p>
+    <p>whirlwind example</p>
+    <p>june 29, 2024</p>
+</whirlheader>
 
 # Introduction
 

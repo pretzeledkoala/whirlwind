@@ -1,0 +1,287 @@
+{
+	"[markdown]": {
+		"editor.quickSuggestions": {
+			"other": "on",
+			"comments": "on",
+			"strings": "on"
+		}
+	},
+	// Box
+	"conjecture": {
+		"prefix": "conj",
+		"body": [
+			"<conjecture>",
+			"",
+			"${1}",
+			"",
+			"</conjecture>"
+		],
+		"description": "conjecture"
+	},
+	"construction": {
+		"prefix": "cons",
+		"body": [
+			"<construction>",
+			"",
+			"${1}",
+			"",
+			"</construction>"
+		],
+		"description": "construction"
+	},
+	"corollary": {
+		"prefix": "cor",
+		"body": [
+			"<corollary>",
+			"",
+			"${1}",
+			"",
+			"</corollary>"
+		],
+		"description": "corollary"
+	},
+	"definition": {
+		"prefix": "def",
+		"body": [
+			"<definition>",
+			"",
+			"${1}",
+			"",
+			"</definition>"
+		],
+		"description": "definition"
+	},
+	"example": {
+		"prefix": "ex",
+		"body": [
+			"<example>",
+			"",
+			"${1}",
+			"",
+			"</example>"
+		],
+		"description": "example"
+	},
+	"lemma": {
+		"prefix": "lem",
+		"body": [
+			"<lemma>",
+			"",
+			"${1}",
+			"",
+			"</lemma>"
+		],
+		"description": "lemma"
+	},
+	"problem": {
+		"prefix": "prob",
+		"body": [
+			"<problem>",
+			"",
+			"${1}",
+			"",
+			"</problem>"
+		],
+		"description": "problem"
+	},
+	"proposition": {
+		"prefix": "prop",
+		"body": [
+			"<proposition>",
+			"",
+			"${1}",
+			"",
+			"</proposition>"
+		],
+		"description": "proposition"
+	},
+	"theorem": {
+		"prefix": "thm",
+		"body": [
+			"<theorem>",
+			"",
+			"${1}",
+			"",
+			"</theorem>"
+		],
+		"description": "theorem"
+	},
+	// Nonbox
+	"remark": {
+		"prefix": "rem",
+		"body": [
+			"<remark>",
+			"",
+			"${1}",
+			"",
+			"</remark>"
+		],
+		"description": "remark"
+	},
+	"proof": {
+		"prefix": "prf",
+		"body": [
+			"<proof>",
+			"",
+			"${1}",
+			"",
+			"</proof>"
+		],
+		"description": "proof"
+	},
+	"solution": {
+		"prefix": "sol",
+		"body": [
+			"<solution>",
+			"",
+			"${1}",
+			"",
+			"</solution>"
+		],
+		"description": "solution"
+	},
+	// TeX
+	"dollar": {
+		"prefix": "d",
+		"body": [
+			"$${1}$"
+		],
+		"description": "dollar"
+	},
+	"dollars": {
+		"prefix": "dd",
+		"body": [
+			"$$",
+			"${1}",
+			"$$"
+		],
+		"description": "dollars"
+	},
+	"align": {
+		"prefix": "align",
+		"body": [
+			"$$",
+			"\\begin{align*}",
+			"${1}",
+			"\\end{align*}",
+			"$$"
+		],
+		"description": "align"
+	},
+	// Brackets
+	"parenthesis": {
+		"prefix": "paren",
+		"body": [
+			"\\left(${1}\\right)"
+		],
+		"description": "parenthesis"
+	},
+	"bracket": {
+		"prefix": "bracket",
+		"body": [
+			"\\left[${1}\\right]"
+		],
+		"description": "bracket"
+	},
+	"curly bracket": {
+		"prefix": "cbrack",
+		"body": [
+			"\\left{${1}\\right}"
+		],
+		"description": "curly bracket"
+	},
+	"pip": {
+		"prefix": "pip",
+		"body": [
+			"\\left|${1}\\right|"
+		],
+		"description": "pip"
+	},
+	"dpip": {
+		"prefix": "dpip",
+		"body": [
+			"\\|${1}\\|"
+		],
+		"description": "dpip"
+	},
+	"langle rangle": {
+		"prefix": "lr",
+		"body": [
+			"\\langle ${1} \\rangle"
+		],
+		"description": "langle rangle"
+	},
+	// Matrices
+	"mtx": {
+		"prefix": "mtx",
+		"body": [
+			"\\begin{pmatrix}",
+			"${1}",
+			"\\end{pmatrix}",
+			""
+		],
+		"description": "mtx"
+	},
+	"brack mtx": {
+		"prefix": "bmtx",
+		"body": [
+			"\\begin{bmatrix}",
+			"${1}",
+			"\\end{bmatrix}",
+			""
+		],
+		"description": "bmtx"
+	},
+	"curly mtx": {
+		"prefix": "cmtx",
+		"body": [
+			"\\begin{Bmatrix}",
+			"${1}",
+			"\\end{Bmatrix}",
+			""
+		],
+		"description": "curly mtx"
+	},
+	"pipmtx": {
+		"prefix": "pipmtx",
+		"body": [
+			"\\begin{vmatrix}",
+			"${1}",
+			"\\end{vmatrix}",
+			""
+		],
+		"description": "pipmtx"
+	},
+	"dpipmtx": {
+		"prefix": "dpipmtx",
+		"body": [
+			"\\begin{Vmatrix}",
+			"${1}",
+			"\\end{Vmatrix}",
+			""
+		],
+		"description": "dpipmtx"
+	},
+	// Fonts
+	"bb": {
+		"prefix": "bb",
+		"body": [
+			"\\mathbb{${1}}"
+		],
+		"description": "bb"
+	},
+	"cal": {
+		"prefix": "cal",
+		"body": [
+			"\\mathcal{${1}}"
+		],
+		"description": "cal"
+	},
+	"frak": {
+		"prefix": "frak",
+		"body": [
+			"\\mathfrak{${1}}"
+		],
+		"description": "frak"
+	}
+}
