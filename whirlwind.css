@@ -1,0 +1,141 @@
+body {
+  counter-reset: box-section box-subsection box-problem;
+  background-color: white;
+}
+
+h1 {
+  counter-increment: section;
+  counter-reset: subsection;
+  padding-bottom: -10px;
+  padding-top: 15px;
+}
+
+/* Boxes */
+
+conjecture,
+construction,
+corollary,
+definition,
+example,
+lemma,
+problem,
+proposition,
+theorem {
+  border: 1px solid #000000;
+  padding: 5px;
+  background-image: inherit;
+  counter-increment: section 0;
+  counter-increment: box-subsection;
+  margin-top: 10px;
+  display: block;
+  order: 0;
+}
+
+conjecture::before,
+construction::before,
+corollary::before,
+definition::before,
+definition::before,
+example::before,
+lemma::before,
+problem::before,
+proposition::before,
+theorem::before {
+  font-weight: bold;
+  font-style: normal;
+}
+
+conjecture::before {
+  content: "Conjecture " counter(section) "." counter(box-subsection) ". ";
+}
+
+construction::before {
+  content: "Construction " counter(section) "." counter(box-subsection) ". ";
+}
+
+corollary::before {
+  content: "Corollary " counter(section) "." counter(box-subsection) ". ";
+}
+
+definition::before {
+  content: "Definition " counter(section) "." counter(box-subsection) ". ";
+}
+
+example::before {
+  content: "Example " counter(section) "." counter(box-subsection) ". ";
+}
+
+lemma::before {
+  content: "Lemma " counter(section) "." counter(box-subsection) ". ";
+}
+
+problem::before {
+  content: "Problem " counter(section) "." counter(box-subsection) ". ";
+}
+
+proposition::before {
+  content: "Proposition " counter(section) "." counter(box-subsection) ". ";
+}
+
+theorem::before {
+  content: "Theorem " counter(section) "." counter(box-subsection) ". ";
+}
+
+/* Others */
+
+remark::before {
+  content: 'Remark. ';
+  font-style: italic;
+}
+
+remark {
+  display: inline-block;
+}
+
+remark p {
+  margin-top: -5px;
+}
+
+proof::before {
+  content: 'Proof. ';
+  font-style: italic;
+}
+
+proof {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+proof::after {
+  float: right;
+  content: '◾';
+  font-size: 15px;
+}
+
+proof p {
+  display: inline-block;
+}
+
+solution::before {
+  content: 'Solution. ';
+  font-style: italic;
+}
+
+solution {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+solution::after {
+  float: right;
+  content: '◾';
+  font-size: 15px;
+}
+
+solution p {
+  display: inline-block;
+}
+
+source {
+  display: inline-flex;
+}

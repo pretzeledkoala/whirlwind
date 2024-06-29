@@ -1,2 +1,4 @@
 # whirlwind
- a blazing-fast workstation for faster in-class LaTeX notes
+
+A blazing-fast workstation for faster in-class LaTeX notes.
+
