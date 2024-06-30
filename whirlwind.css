@@ -18,12 +18,16 @@ construction,
 corollary,
 definition,
 example,
+exercise,
 lemma,
 problem,
 proposition,
 theorem {
   border: 1px solid #000000;
-  padding: 5px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-image: inherit;
   counter-increment: section 0;
   counter-increment: box-subsection;
@@ -38,6 +42,7 @@ corollary::before,
 definition::before,
 definition::before,
 example::before,
+exercise::before,
 lemma::before,
 problem::before,
 proposition::before,
@@ -60,6 +65,10 @@ corollary::before {
 
 definition::before {
   content: "Definition " counter(section) "." counter(box-subsection) ". ";
+}
+
+exercise::before {
+  content: "Exercise " counter(section) "." counter(box-subsection) ". ";
 }
 
 example::before {
@@ -96,6 +105,19 @@ remark {
 remark p {
   margin-top: -5px;
 }
+
+src {
+  display: inline-flex;
+}
+
+src::before {
+  content: "(";
+}
+
+src::after {
+  content: ")";
+}
+
 
 proof::before {
   content: 'Proof. ';

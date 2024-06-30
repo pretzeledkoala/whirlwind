@@ -62,6 +62,17 @@
 		],
 		"description": "example"
 	},
+	"exercise": {
+		"prefix": "exer",
+		"body": [
+			"<exercise>",
+			"",
+			"${1}",
+			"",
+			"</exercise>"
+		],
+		"description": "exercise"
+	},
 	"lemma": {
 		"prefix": "lem",
 		"body": [
@@ -139,6 +150,13 @@
 			"</solution>"
 		],
 		"description": "solution"
+	},
+	"source": {
+		"prefix": "src",
+		"body": [
+			"<src>${1}</src>"
+		],
+		"description": "source"
 	},
 	// TeX
 	"dollar": {
@@ -283,5 +301,5 @@
 			"\\mathfrak{${1}}"
 		],
 		"description": "frak"
-	}
+	},
 }
