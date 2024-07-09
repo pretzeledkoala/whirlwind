@@ -204,7 +204,7 @@
 	"curly bracket": {
 		"prefix": "cbrack",
 		"body": [
-			"\\left{${1}\\right}"
+			"\\left\\{${1}\\right\\}"
 		],
 		"description": "curly bracket"
 	},
@@ -301,5 +301,5 @@
 			"\\mathfrak{${1}}"
 		],
 		"description": "frak"
-	},
+	}
 }

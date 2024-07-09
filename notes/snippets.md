@@ -44,7 +44,7 @@
 |---------|------------|
 | paren | `\left( \right)` |
 | brack | `\left[ \right]` |
-| cbrack | `\left{ \right}` |
+| cbrack | `\left\{ \right\}` |
 | pip | `\left\| \right\|` |
 | dpip | `\\| \\|` |
 | lr | `\langle \rangle` |
