@@ -188,7 +188,7 @@
 	},
 	// Brackets
 	"parenthesis": {
-		"prefix": "paren",
+		"prefix": "lr",
 		"body": [
 			"\\left(${1}\\right)"
 		],
