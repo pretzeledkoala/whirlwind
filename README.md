@@ -16,4 +16,4 @@ The goals of whirlwind are threefold:
 
 1. Clone the [github codebase](https://github.com/pretzeledkoala/whirlwind) locally: `git clone https://github.com/pretzeledkoala/whirlwind`
 2. Set up the snippets file: `Open command palette (⌘P)` $\to$ `Snippets: configure user snippets` $\to$ `new snippets file` (both local and global work) $\to$ copy and paste `/.vscode/snippets.json` into this file.
-3. Open `notes/template.md` and start taking notes!
+3. Open `notes/template.md`, the markdown preview for the markdown file (`⌘K V`), and start taking notes!
