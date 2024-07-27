@@ -1,3 +1,5 @@
+/* whirlwind.css, made by gary hu */
+
 body {
   counter-reset: box-section box-subsection box-problem;
   background-color: white;

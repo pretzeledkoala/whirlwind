@@ -53,11 +53,17 @@
 
 | command | snippet |
 |---------|------------|
-| mtx | `\begin{pmatrix} \end{pmatrix}` |
-| bmtx | `\begin{bmatrix} \end{bmatrix}` |
-| cmtx | `\begin{Bmatrix} \end{Bmatrix}` |
-| pipmtx | `\begin{vmatrix} \end{vmatrix}` |
-| dpipmtx | `\begin{Vmatrix} \end{Vmatrix}` |
+| mat | `\begin{pmatrix} \end{pmatrix}` |
+| bmat | `\begin{bmatrix} \end{bmatrix}` |
+| cmat | `\begin{Bmatrix} \end{Bmatrix}` |
+| pipmat | `\begin{vmatrix} \end{vmatrix}` |
+| dpipmat | `\begin{Vmatrix} \end{Vmatrix}` |
+
+# fractions 
+| command | snippet |
+|---------|------------|
+| fr | `\frac{}{}` |
+| dfr | `\dfrac{}{}` |
 
 # fonts
 
@@ -67,5 +73,15 @@
 | cal | `\mathcal{}` |
 | frak | `\mathfrak{}` |
 
-</center>
+# text 
 
+| command | snippet |
+|---------|------------|
+| txt | `\text{}` |
+| ul | `\underline{}` |
+| ol | `\overline{}` |
+| bf | `\textbf{}` |
+| it | `\textit{}` |
+
+
+</center>

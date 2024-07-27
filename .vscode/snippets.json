@@ -188,7 +188,7 @@
 	},
 	// Brackets
 	"parenthesis": {
-		"prefix": "lr",
+		"prefix": "pa",
 		"body": [
 			"\\left(${1}\\right)"
 		],
@@ -201,13 +201,13 @@
 		],
 		"description": "bracket"
 	},
-	"curly bracket": {
+	"cbrack": {
 		"prefix": "cbrack",
 		"body": [
-			"\\left\\{${1}\\right\\}"
+		  "\\left\\{ \\right \\\\}"
 		],
-		"description": "curly bracket"
-	},
+		"description": "cbrack"
+	  },
 	"pip": {
 		"prefix": "pip",
 		"body": [
@@ -230,55 +230,55 @@
 		"description": "langle rangle"
 	},
 	// Matrices
-	"mtx": {
-		"prefix": "mtx",
+	"mat": {
+		"prefix": "mat",
 		"body": [
 			"\\begin{pmatrix}",
 			"${1}",
 			"\\end{pmatrix}",
 			""
 		],
-		"description": "mtx"
+		"description": "mat"
 	},
-	"brack mtx": {
-		"prefix": "bmtx",
+	"brack mat": {
+		"prefix": "bmat",
 		"body": [
 			"\\begin{bmatrix}",
 			"${1}",
 			"\\end{bmatrix}",
 			""
 		],
-		"description": "bmtx"
+		"description": "bmat"
 	},
-	"curly mtx": {
-		"prefix": "cmtx",
+	"curly mat": {
+		"prefix": "cmat",
 		"body": [
 			"\\begin{Bmatrix}",
 			"${1}",
 			"\\end{Bmatrix}",
 			""
 		],
-		"description": "curly mtx"
+		"description": "curly mat"
 	},
-	"pipmtx": {
-		"prefix": "pipmtx",
+	"pipmat": {
+		"prefix": "pipmat",
 		"body": [
 			"\\begin{vmatrix}",
 			"${1}",
 			"\\end{vmatrix}",
 			""
 		],
-		"description": "pipmtx"
+		"description": "pipmat"
 	},
-	"dpipmtx": {
-		"prefix": "dpipmtx",
+	"dpipmat": {
+		"prefix": "dpipmat",
 		"body": [
 			"\\begin{Vmatrix}",
 			"${1}",
 			"\\end{Vmatrix}",
 			""
 		],
-		"description": "dpipmtx"
+		"description": "dpipmat"
 	},
 	// Fonts
 	"bb": {
@@ -301,5 +301,57 @@
 			"\\mathfrak{${1}}"
 		],
 		"description": "frak"
-	}
+	},
+	// Fractions
+	"fr": {
+		"prefix": "frac",
+		"body": [
+		  "\\frac{${1}}{}"
+		],
+		"description": "fr"
+	  },
+	"dfr": {
+		"prefix": "dfrac",
+		"body": [
+		  "\\dfrac{${1}}{}"
+		],
+		"description": "dfr"
+	  },
+	//   Text
+	"text": {
+		"prefix": "txt",
+		"body": [
+		  "\\text{${1}}"
+		],
+		"description": "text"
+	  },
+	  "underline": {
+		"prefix": "ul",
+		"body": [
+		  "\\underline{${1}}"
+		],
+		"description": "underline"
+	  },
+	  "overline": {
+		"prefix": "ol",
+		"body": [
+		  "\\overline{${1}}"
+		],
+		"description": "overline"
+	  },
+	  "bold": {
+		"prefix": "bf",
+		"body": [
+		  "\\textbf{${1}}"
+		],
+		"description": "bold"
+	  },
+	  "italic": {
+		"prefix": "it",
+		"body": [
+		  "\\textit{${1}}"
+		],
+		"description": "italic"
+	  }
+
 }
