@@ -4,6 +4,11 @@ body {
   counter-reset: box-section box-subsection box-problem;
   background-color: white;
   color: black;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all; /* Breaks words at any character */
+  white-space: normal; /* Allows wrapping */
+  max-width: 100%; /* Ensures content doesn't exceed container width */
 }
 
 h1 {
@@ -11,6 +16,18 @@ h1 {
   counter-reset: subsection;
   padding-bottom: -10px;
   padding-top: 15px;
+}
+
+/* For a narrower input */
+input[type="text"] {
+  max-width: 300px;
+  width: 100%;
+}
+
+/* For a wider textarea */
+textarea {
+  max-width: 800px;
+  width: 100%;
 }
 
 /* Boxes */
@@ -127,20 +144,13 @@ proof::before {
 
 proof {
   padding-top: 5px;
-  margin-bottom: 36px;
-  display: inline-block; /* Display as inline-block to allow inline positioning */
-  position: relative; /* Position relative for absolute positioning */
+  padding-bottom: 10px;
 }
 
 proof::after {
-  position: absolute;
-  top: 100%;
-  right: 0;
+  float: right;
   content: '◾';
   font-size: 15px;
-  /* Adjust these values */
-  margin-bottom: 0; /* Try setting margin-bottom to 0 */
-  padding-bottom: 0; /* Try setting padding-bottom to 0 */
 }
 
 proof p {

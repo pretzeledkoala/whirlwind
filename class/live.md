@@ -2,17 +2,9 @@
 
 <whirlheader>
     <p>Gary Hu</p>
-    <p>Riemann Roch Theorem</p>
+    <p>Live Notes</p>
     <p>July 27, 2024</p>
 </whirlheader>
 
-# Riemann Roch Theorem
+# Live
 
-<theorem>
-<src>Riemann-Roch</src>
-
-$$
-\ell(D)-\ell(K-D)=\deg(D)+1-g.
-$$
-
-</theorem>
