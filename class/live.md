@@ -1,10 +1,11 @@
 <link href="../whirlwind.css" rel="stylesheet">
 
 <whirlheader>
-    <p>Gary Hu</p>
+    <p>Nameu</p>
     <p>Live Notes</p>
-    <p>July 27, 2024</p>
+    <p>Date</p>
 </whirlheader>
 
-# Live
+These are my notes for lecture #[0] for [classname]
 
+# Introduction
