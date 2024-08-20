@@ -4,11 +4,10 @@ body {
   counter-reset: box-section box-subsection box-problem;
   background-color: white;
   color: black;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  word-break: break-all; /* Breaks words at any character */
-  white-space: normal; /* Allows wrapping */
-  max-width: 100%; /* Ensures content doesn't exceed container width */
+  white-space: normal;
+  /* Allows wrapping */
+  max-width: 100%;
+  /* Ensures content doesn't exceed container width */
 }
 
 h1 {
