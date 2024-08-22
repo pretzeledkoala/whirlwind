@@ -136,7 +136,7 @@ src::after {
   content: ")";
 }
 
-proof::before {
+/* proof::before {
   content: 'Proof. ';
   font-style: italic;
 }
@@ -154,6 +154,29 @@ proof::after {
 
 proof p {
   display: inline-block;
+} */
+
+proof {
+  border: 0px solid #fffefe;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  background-image: inherit;
+  counter-increment: section 0;
+  counter-increment: box-subsection;
+  margin-top: 10px;
+  display: block;
+  order: 0;
+  font-style: normal;
+}
+
+proof::before {
+  content: "Proof. ";
+}
+
+proof::after {
+  float: right;
+  content: '◾';
+  font-size: 15px;
 }
 
 solution::before {
