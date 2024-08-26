@@ -12,7 +12,7 @@ Let $\mathcal{C}$ be some collection of $2n$-dimensional symplectic manifolds su
 
 <definition>
 
-An **asymptotic capacity on $\mathcal{C}$** is a function $c: \mathcal{C}\to [0,\infty]$ such that 
+An **symplectic capacity on $\mathcal{C}$** is a function $c: \mathcal{C}\to [0,\infty]$ such that 
 
 1. **Monotonicity**: if there exists a symplectic embedding $(M, \omega) \hookrightarrow (M', \omega')$, then $c(M, \omega) \le c(M', \omega')$. 
 2. **Comformality**: $c(M, a\omega) = ac(M, \omega)$.
@@ -26,7 +26,7 @@ A stronger version of $(3)$ is **normalization**: $c(B^{2n}(1))=c(Z^{2n}(1)) =1$
 
 </remark>
 
-Often, we have $\mathcal{C}\subset \left\{ \text{subsets of } \mathbb{R}^{2n} \right \}$. Then, instead of scaling via $(U, \omega_0)\to (U, a\omega)$, we'll keep the same $\omega_0$, and replace $U$ by $aU := \left\{ \sqrt{a}\vec{z} | \vec{z} \in U \right\} $. 
+Often, we have $\mathcal{C}\subset \left\{ \text{subsets of } \mathbb{R}^{2n} \right \}$. Then, instead of scaling via $(U, \omega_0)\to (U, a\omega)$, we'll keep the same $\omega_0$, and replace $U$ by $aU := \left\{ \sqrt{a}\vec{z} \mid  \vec{z} \in U \right\} $. 
 
 Let's look at some examples of capacities:
 
@@ -35,7 +35,7 @@ Let's look at some examples of capacities:
 
 The **Gromov capacity** is defined as
 $$
-c_B(M,\omega) := \sup \left\{ a| \exists \text{ symplectic embedding } B^{2n}(a) \hookrightarrow (M, \omega) \right\}.
+c_B(M,\omega) := \sup \left\{ a\mid  \exists \text{ symplectic embedding } B^{2n}(a) \hookrightarrow (M, \omega) \right\}.
 $$
 
 </example>
@@ -52,10 +52,10 @@ Here is another example of a capacity:
 <example>
 <src>Hofer-Zehnder Capacity</src>
 
-The **Hofer Zehnder capacity** is defined as
+The **Hofer-Zehnder capacity** is defined as
 
 $$
-c_{\text{HZ}}(M, \omega) := \sup \left\{ \max H | \text{condition}\right\}
+c_{\text{HZ}}(M, \omega) := \sup \left\{ \max H \mid  \text{condition}\right\}
 $$
 where the condition is that $H:M\to \mathbb{R}$, $H=0$ on some open set compactly supported, and the only periodic orbits of $X_H$ having period $<1$ are constants. 
 
@@ -65,14 +65,14 @@ where the condition is that $H:M\to \mathbb{R}$, $H=0$ on some open set compactl
 
 For the rest of today, assume $\omega=d\lambda$. For example, take the Euler vector field $E_X, M\subset \mathbb{R}^{2n},$ and $\lambda = \lambda_0 := \frac{1}{2}\sum_j (x_j dy_j - y_j dx_j)$.
 
-For $H$ as above, let $\text{HF}(H)$ be the Morse homology for $\mathcal{A}_H: C^\infty (\mathbb{R}/\mathbb{Z}, M)\to \mathbb{R}$ defined by
+For $H$ as above, let $\text{HF}(H)$ be the Morse homology for the action functional $\mathcal{A}_H: C^\infty (\mathbb{R}/\mathbb{Z}, M)\to \mathbb{R}$ defined by
 $$
 \mathcal{A}_H(\gamma)=-\int_{S^1} \gamma^* \lambda+\int_0^1 H(t, \gamma(t)) dt.
 $$ 
 
 Additionally, define
 $$
-\text{Crit}(\mathcal{A}_H):=\left\{ \gamma: \mathbb{R}/\mathbb{Z} \to M |\gamma'(t)=X_{H_t}(\gamma(t)) \right\}.
+\text{Crit}(\mathcal{A}_H):=\left\{ \gamma: \mathbb{R}/\mathbb{Z} \to M \mid \gamma'(t)=X_{H_t}(\gamma(t)) \right\}.
 $$
 
 There is a 1-to-1 correspondence between $\text{Crit}(\mathcal{A}_H)$ and $\text{Fix}(\varphi_H')$ given by $\gamma \mapsto \gamma(0)$. 
@@ -82,7 +82,7 @@ $$
 \dfrac{\partial u}{\partial s}+J_t(u(s,t)) \left( \dfrac{\partial u}{\partial t}- X_{H_t} \right)=0.
 $$
 
-Additionally, we have $\text{CF} = \text{span} \left\{ \text{Crit}(\mathcal{A}_H) \right\}$, graded by $\mu_{\text{CZ}}$, with the boundary operator $\partial: \text{CF}_k(H) \to \text{CF}_{k-1}(H)$ defined by $\partial \gamma_- = \sum \# (\text{flowlines from } \gamma_- \text{ to } \gamma_+) \gamma_+$ satisfying $\text{ind}(\gamma_-) - \text{ind}(\gamma_+) = 1$.
+Additionally, we have $\text{CF} = \text{span} \left\{ \text{Crit}(\mathcal{A}_H) \right\}$, graded by $\mu_{\text{CZ}}$, with the boundary operator $\partial: \text{CF}_k(H) \to \text{CF}_{k-1}(H)$ defined by $\partial \gamma_- = \sum \# (\text{flowlines from } \gamma_- \text{ to } \gamma_+) \gamma_+$, satisfying $\text{ind}(\gamma_-) - \text{ind}(\gamma_+) = 1$.
 
 <proposition>
 
@@ -92,7 +92,7 @@ Assuming the conditions at infinity guarantee spaces are compact:
 
 </proposition>
 
-The filtered version can be given as follows: given $t\in \mathbb{R}$, define $\text{CF}^t(H)= \text{span} \{ \gamma \in \text{Crit}(\mathcal{A}_H) | \mathcal{A}_H(\gamma)=t \}$. $\mathcal{A}_H$ decreases along its negative gradient flowlines, so $\partial(\text{CF}^t(H)) \subset \text{CF}^t(H)$. This gives a homology $\text{HF}^t(H)$ for all $t\in \mathbb{R}$, with inclusion-induced $\text{HF}^s(H)\to \text{HF}^t(H)$ for $s\le t$.
+The filtered version can be given as follows: given $t\in \mathbb{R}$, define $\text{CF}^t(H)= \text{span} \{ \gamma \in \text{Crit}(\mathcal{A}_H) \mid  \mathcal{A}_H(\gamma)=t \}$. $\mathcal{A}_H$ decreases along its negative gradient flowlines, so $\partial(\text{CF}^t(H)) \subset \text{CF}^t(H)$. This gives a homology $\text{HF}^t(H)$ for all $t\in \mathbb{R}$, with inclusion-induced $\text{HF}^s(H)\to \text{HF}^t(H)$ for $s\le t$.
 
 If $H\ge H'$, we have continuation chain maps $\text{CF}^t(H) \to \text{CF}^t(H')$, so for $s\le t, H\ge H'$, the following diagram commutes:
 <!-- $$
@@ -118,7 +118,7 @@ $$
 
 <definition>
 
-A **Liouville domain** $(W, \omega)$ is a compact manifold with $\partial, W$, together with a $\lambda \in \Omega^1(W)$ such that $d\lambda$ is symplectic and such that the Liouville vector field $V_\lambda$, defined by $d\lambda(V_\lambda, \cdot)=\lambda$, points outward along $\partial W$.
+A **Liouville domain** $(W, \omega)$ is a compact manifold with $\partial, W$, together with a $\lambda \in \Omega^1(W)$ such that $d\lambda$ is symplectic and the Liouville vector field $V_\lambda$, defined by $d\lambda(V_\lambda, \cdot)=\lambda$, points outward along $\partial W$.
 
 </definition>
 
@@ -126,9 +126,9 @@ A **Liouville domain** $(W, \omega)$ is a compact manifold with $\partial, W$, t
 
 For $\lambda_0 = \frac{1}{2} \sum (x_j \,dy_j - y_j \,dx_j)$, we have $V_{\lambda_0} = \frac{1}{2}\sum (x_j \partial{x_j}+y_j \partial_{y_j})$, so we can take $W$ to be the strongly star-shaped around the region in $\mathbb{R}^{2n}$.
 
-In this case, $\alpha:= \lambda|_{\partial W}$ for $\alpha \in \Omega^1(\partial W)$ is a contact form on $\partial W$, and there exists a collar neighborhood $U$ of $\partial W$ such that $(U, \lambda) \approx ([1-\epsilon, 1]\times \partial W, r\alpha)$. From the completion, we have 
+In this case, $\alpha:= \lambda\mid _{\partial W}$ for $\alpha \in \Omega^1(\partial W)$ is a contact form on $\partial W$, and there exists a collar neighborhood $U$ of $\partial W$ such that $(U, \lambda) \approx ([1-\epsilon, 1]\times \partial W, r\alpha)$. From the completion, we have 
 $$
-(\hat{W}, \hat{\lambda})=(W,\lambda) \bigcup_{\partial W} ([1, \infty)\times \partial W,  r\alpha).
+\left(\hat{W}, \hat{\lambda}\right)=(W,\lambda) \bigcup_{\partial W} ([1, \infty)\times \partial W,  r\alpha).
 $$
 So in this case, $\hat{W}\simeq \mathbb{R}^{2n}$ is the **Liouville isomorphism**.
 
@@ -151,7 +151,7 @@ Let $H_W=\left\{ W\text{-admissible Hamiltonians}\right\}$. Then we can associat
 
 For all $t\in \mathbb{R}$, define 
 $$
-\text{SH}^t(W) := \lim_{\stackrel{\longrightarrow}{H\in \mathcal{H}_W}} \text{HF}^t(H).
+\text{SH}^t(W) := \lim_{\stackrel{\longrightarrow}{H\in \mathcal{H}_W}} \text{HF}^t(H)
 $$
 via the map we just mentioned.
 
@@ -178,7 +178,7 @@ More generally:
 
 <proposition>
 
-For Liouville embedding $\varphi: W' \hookrightarrow W^0$ (meaning $\varphi^*\lambda - \lambda' = d\cdot (\text{some function})$), we get $\varphi': \text{SH}^t(W)\to \text{SH}^t(W')$.
+For a Liouville embedding $\varphi: W' \hookrightarrow W^0$ (meaning $\varphi^*\lambda - \lambda' = d\cdot f$ for some function $f$), we get $\varphi': \text{SH}^t(W)\to \text{SH}^t(W')$.
 
 </proposition>
 
@@ -206,7 +206,7 @@ This motivates the following definition:
 
 The **Floer-Hofer-Wysocki capacity** is
 $$
-c_{\text{FHW}}(W):= \inf \left\{t| \text{SH}_n^\epsilon(W) \to \text{SH}^t(W)=0 \text{ for small }\epsilon \right\}
+c_{\text{FHW}}(W):= \inf \left\{t\mid  \text{SH}_n^\epsilon(W) \to \text{SH}^t(W)=0 \text{ for small }\epsilon \right\}
 $$
 
 </definition>

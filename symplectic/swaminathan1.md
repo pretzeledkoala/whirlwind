@@ -61,7 +61,7 @@ We have two cases: when $\Sigma$ is smooth versus nodal.
 Here, smooth means $\Sigma \cong \mathbb{CP}^1$. Recall that 
 - $\mathcal{B}=C^\infty (\Sigma, X)_A=\left\{ v:\Sigma \to X | v \text{ is }C^\infty, v_*[\Sigma]=A \right\}$, which we should think of an infinite dimensional manifold. 
 - $\mathcal{E}$ is an infinite rank vector bundle on $\mathcal{B}$ whose fiber is $\Omega^{0,1}(\Sigma, v^*TX) = \overline{\text{Hom}}_{\mathbb{C}}(T\Sigma, v^*TX)$ over any $v\in \mathcal{B}$.
-- $\sigma$ is a section of $\mathcal{E}$ over $\mathcal{B}$ given by $(v\mapsto \overline{\partial}_J v)$ where $\overline{\partial}_K = \frac{1}{2} (dv+J(v)\cdot dv \cdot j_\Sigma)$
+- $\sigma$ is a section of $\mathcal{E}$ over $\mathcal{B}$ given by $\left(v\mapsto \overline{\partial}_J v\right)$ where $\overline{\partial}_K = \frac{1}{2} (dv+J(v)\cdot dv \cdot j_\Sigma)$
 
 Note that $\sigma^{-1}(0)=\text{Hol}(\Sigma, X,A,J)$.
 
@@ -132,17 +132,17 @@ If $D_u$ is surjective, then $\overline{\mathcal{M}}_{0,m}(X,A,J)$ has a local c
 
 Let $\mathcal{B}$ be a Banach manifold, $\mathcal{E}$ a Banach vector bundle, and $J$ a smooth section with Fredholm linearizations. We want to study $\overline{\mathcal{M}} = \left(D \overline{\partial}\right)^{-1}(0)\subset \mathcal{B}$.
 
-Suppose $u\in \overline{M}$ is given. If $\left(D \overline{\partial}\right)_u$ is surjective, then we are done, i.e. $\overline{\mathcal{M}}$ is a manifold near $u$ and $T_u \overline{\mathcal{M}}=\ker \left(D \overline{\partial}\right)_u$.
+Suppose $u\in \overline{\mathcal{M}}$ is given. If $\left(D \overline{\partial}\right)_u$ is surjective, then we are done, i.e. $\overline{\mathcal{M}}$ is a manifold near $u$ and $T_u \overline{\mathcal{M}}=\ker \left(D \overline{\partial}\right)_u$.
 
 So let's assume that $D_u: T_u \mathcal{B}\to \mathcal{E}_u$ is not surjective. Choose a finite dimensional vector space $V$ and a linear map $\lambda: E \to \mathcal{E}_u$ such that $E\twoheadrightarrow \text{coker}D_u$, i.e. $D_u \oplus \lambda: T_u \mathcal{B} \oplus E \twoheadrightarrow \mathcal{E}_u$. Choose a neighborhood $u\in \mathcal{U} \subset \mathcal{B}$ and an extension $\lambda: \mathcal{U}\times v \to \mathcal{E}_{\mathcal{U}}$.
 
 Now, consider 
 $$
-\mathcal{M}_{\mathcal{U}, E, \lambda} = \left\{ v\in \mathcal{U}, e\in E | \overline{\partial}v+\lambda(v,e) =0 \right \} \hookleftarrow  \overline{M}\cap \mathcal{U}.
+\mathcal{M}_{\mathcal{U}, E, \lambda} = \left\{ v\in \mathcal{U}, e\in E | \overline{\partial}v+\lambda(v,e) =0 \right \} \hookleftarrow  \overline{\mathcal{M}}\cap \mathcal{U}.
 $$
 There is a projection $s: \overline{\mathcal{M}}_{\mathcal{U}, E, \lambda}\to E$. 
 
-Let's consider the linearized operators at $(u,0) \in \overline{M}_{\mathcal{U}, E, \lambda}$ given by
+Let's consider the linearized operators at $(u,0) \in \overline{\mathcal{M}}_{\mathcal{U}, E, \lambda}$ given by
 $$
 T_u \mathcal{B} \to \mathcal{E}_u \\
 (\xi, e)\mapsto D_u \xi + \lambda(u,e)

@@ -6,7 +6,7 @@
     <p>August 19</p>
 </whirlheader>
 
-# ASDASD 
+# Introduction 
 
 <definition>
 
@@ -41,8 +41,8 @@ Let $n\ge 5$. Then two closed simply connected $n$-manifolds are $h$-cobordant i
 Some history:
 - <src>Ruan, 1994</src>: Homeomorphic but not diffeomorphic Kähler surfaces $\mathbb{C}^2 \# \overline{\mathbb{CP}}^2$ and Barlow surface.
 - <src>Ruan, Tian, 1997</src>: Stabilizing conjecture. For simply connected elliptic surfaces.
-- <src>Ionel, Parker, 1999</src> $E(n)$ using knot surgery.
-- <src>Smith, 2000</src> Given $n\ge 2$. Constructs $n$ symplecitc structures on a fixed simply-connected $Z^4$ such that $c,s$ are different, which implies the 4-6 question cannot be replaced by $\pi^2$.
+- <src>Ionel, Parker, 1999</src>: $E(n)$ using knot surgery.
+- <src>Smith, 2000</src>: Given $n\ge 2$. Constructs $n$ symplecitc structures on a fixed simply-connected $Z^4$ such that $c,s$ are different, which implies the 4-6 question cannot be replaced by $\pi^2$.
 
 
 ## Theorem A

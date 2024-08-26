@@ -8,18 +8,17 @@
 
 # Symplectic Homology
 
-Let $(W,\lambda)$ be a Liouville domain, with $\eta = \partial W$ and a contact form $\alpha = \lambda_{Y}$. Let $C$ be a scalar of $Y$ such that $(C\lambda)\cong ((1-\epsilon, 1] \times Y, r\alpha)$. The completion is 
+Suppose we have $(W,\lambda)$ a Liouville domain, $\eta = \partial W$, a contact form $\alpha = \lambda_{Y}$, and $C$ a scalar of $Y$ such that $(C\lambda)\cong ((1-\epsilon, 1] \times Y, r\alpha)$. The completion is 
 $$
 \hat{W}:= W \bigcap_Y ([1,\infty] \times Y, r\alpha).
 $$
-
-Let 
+Define
 $$
 \mathcal{H}_W:=\{W\text{-admissible Hamiltonians}\}
 $$
-where $H: \mathbb{R}/\mathbb{Z}\times \hat{W}\to \mathbb{R}$ such that $H|_{\mathbb{R}/\mathbb{Z}\times H} \ge 0$ and for $r\ge 1, y\in Y$, $H(t,(r,y))=-ar+b$ for $a>0, b\in \mathbb{R}$ such that $a$ is not the closed period of any Reeb orbit for $\alpha$.
+where $H: \mathbb{R}/\mathbb{Z}\times \hat{W}\to \mathbb{R}$ such that $H \mid _{\mathbb{R}/\mathbb{Z}\times H} \ge 0$ and for $r\ge 1, y\in Y$, $H(t,(r,y))=-ar+b$ for $a>0, b\in \mathbb{R}$ such that $a$ is not the closed period of any Reeb orbit for $\alpha$.
 
-Let $H, H \in \mathcal{H}_{W}$ and $H\ge H'$. Then for $t\in \mathbb{R}$ autonomous, we have construction maps $\text{HF}^{t}(H) \to \text{HF}^t(H')$. 
+Suppose $H, H \in \mathcal{H}_{W}$ and $H\ge H'$. Then for $t\in \mathbb{R}$ autonomous, we have construction maps $\text{HF}^{t}(H) \to \text{HF}^t(H')$. 
 
 <definition>
 
@@ -29,9 +28,9 @@ $$
 
 </definition>
 
-A family of $H$'s approaching the limit might look like the following: take $H|_W$ to be a small Morse function $W\to [0,\infty)$ that is $C^2$ small in the complement of the collar, with $H|_{\partial W}=0$.
+A family of $H$'s approaching the limit might look like the following: take $H \mid _W$ to be a small Morse function $W\to [0,\infty)$ that is $C^2$ small in the complement of the collar, with $H \mid _{\partial W}=0$.
 
-- On $C\simeq (1-\epsilon, 1]\times Y$, we have $H(r,y)=-h(r)$ where $h'$ increases rapidly from $\delta \approx 0$ to $a \gg 0$.
+- On $C\cong (1-\epsilon, 1]\times Y$, we have $H(r,y)=-h(r)$, where $h'$ increases rapidly from $\delta \approx 0$ to $a \gg 0$.
 - On $\hat{W}\backslash W = (1,\infty)\times Y$, we have $H(r,y)=-a(r-1)$.
 
 Note that the Hamiltonian vector field given by $H(r,y)=-h(r)$ is $X_H=-h'(r)R_\alpha$.
@@ -41,18 +40,18 @@ $$
 \mathcal{A}_H(\gamma)=-\int_{\mathbb{R}/\mathbb{Z}} \gamma^* \lambda + \int_0^1 H(t, \gamma(t))\,dt.
 $$
 For these $H$, $\text{Crit } \mathcal{A}_H$ consist of
-- constants at critical points of $H_{W\backslash C}$ with $\mathcal{A}_H = H(p) \approx 0$. 
+- Constants at critical points of $H_{W\backslash C}$ with $\mathcal{A}_H = H(p) \approx 0$. 
 - In $C=[1-\epsilon, 1]\times Y$, the critical points are given by reparameterizations of closed orbits of $R_\alpha$ with period $h'(r)$, with $\mathcal{A}_H \approx h'(r)$. 
 
-If $t_0< \text{minimal action of a Reeb orbit}$, 
+If $t_0< \text{the minimal action of a Reeb orbit}$, 
 $$
 \begin{align*}
-\text{SH}_*^t(W) &= H_{*+n}(\text{Morse complex of }H|_{W}) \\
+\text{SH}_*^t(W) &= H_{*+n}(\text{Morse complex of }H \mid _{W}) \\
 &= H_{*+n}(W, Y).
 \end{align*}
 $$
 
-Once $t$ is bigger than the minimal period of a Reeb orbit, $\text{SH}^t$ is affected by the Reeb orbits, any of which gives an $S^1$ family in $r,t(\mathcal{A}_H)$. Morse-Bott perturbation splits these into two orbits different in index by $1$, both with action approximately the period of the original orbit. 
+Once $t$ is bigger than the minimal period of a Reeb orbit, $\text{SH}^t$ is affected by the Reeb orbits, any of which gives an $S^1$ family in $\text{Crit}(\mathcal{A}_H)$. Morse-Bott perturbation splits these into two orbits different in index by $1$, both with action approximately the period of the original orbit. 
 
 <example>
 <src>Ellipsoid</src>
@@ -75,14 +74,18 @@ for $\epsilon\ll 1$.
 
 <example>
 
-For $W\subset \mathbb{R}^{2n}$ star-shaped 
+For $W\subset \mathbb{R}^{2n}$ star-shaped,
 $$
 \text{SH}_*^{+,\infty}(W) = \begin{cases} \mathbb{Q} & *=n+1 \\ 0 &\text{ otherwise }\end{cases}
 $$
 
 </example>
 
-The larger filtration on $\text{SH}^t$ is the filtered positive $S^1$-equivariant symplectic homology. Formally, do filtered Morse theory on $\frac{C^\infty(S^1, \hat{W})\times S^\infty}{S^1}$. With $\mathbb{Q}$ coefficients, we obtain the filtered homology of a complex with 1 generator per Reeb orbit (instead of 2).
+The larger filtration on $\text{SH}^t$ is the filtered positive $S^1$-equivariant symplectic homology. Formally, do filtered Morse theory on 
+$$
+\dfrac{C^\infty(S^1, \hat{W})\times S^\infty}{S^1}.
+$$
+With $\mathbb{Q}$ coefficients, we obtain the filtered homology of a complex with 1 generator per Reeb orbit (instead of 2).
 
 <example>
 
@@ -94,12 +97,14 @@ where $k\ge 1$.
 
 </example>
 
-<definition>
-<src>Gutt-Huchings Capacity</src>
+# The Gutt-Hutchings Capacity
 
-For $k\ge 1$ and $W$ strongly star-shaped $\subset \mathbb{R}^{2n}$, 
+<definition>
+<src>Gutt-Hutchings Capacity</src>
+
+For $k\ge 1$ and $W$ strongly star-shaped $\subset \mathbb{R}^{2n}$, the **Gutt-Hutchings capacity**
 $$
-c_k^{\text{GH}}(W) := \inf \{t | \text{CH}_{n-1+2k}^t(W) \to \text{CH}_{n-1+2k}^\infty(W) \text{ is nonzero}\}.
+c_k^{\text{GH}}(W) := \inf \{t  \mid  \text{CH}_{n-1+2k}^t(W) \to \text{CH}_{n-1+2k}^\infty(W) \text{ is nonzero}\}.
 $$
 
 </definition>

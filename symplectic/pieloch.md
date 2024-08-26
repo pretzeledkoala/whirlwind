@@ -13,25 +13,27 @@ Joint work with Johan Asplund and Yash Deshmukh.
 <theorem>
 <src>Abouzaid</src>
 
-Let $L\subset T^* Q$ be exact, equipped with a choice of rank 1 local system $L$ equivalent in the wrapped Fukaya category $W(T^* Q, \mathbb{Z})$ to the zero section, with some choice of rank 1 local system.
+Let $L\subset T^* Q$ be exact, equipped with a choice of rank 1 local system $L$ equivalent in the wrapped Fukaya category $\mathcal{W}(T^* Q, \mathbb{Z})$ to the zero section, with some choice of rank 1 local system.
 
 </theorem>
 
 Notation: Let $R$ be a commutative ring spectrum. 
 
-<remark>
+A spectrum is morally something that functions like a space. It's a bit more complicated, but this complication allows us to do more algebraic operations. There spectrum also allow us to define more homology theories. And each one of these, can be realized using the language of spectrum. For example:
 
-A spectrum is morally something that functions like a space. It's a bit more complicated, but this complication allows us to do more algebraic operations. There spectrum also allow us to define more homology theories. An each one of these, can be realized using the language of spectrum. For example, we can take 
+<example>
+
+Take
 $$
 \pi_*(M\wedge R) = H_*(M, \mathbb{R}).
 $$
-If welet $R=HK$, then we have $H_*(M;K)$. If we let $R=\text{MO}$, then we get $\Omega_*^{\text{MO}}(M)$
+If we let $R=HK$, then we have $H_*(M;K)$. If we let $R=\text{MO}$, then we get $\Omega_*^{\text{MO}}(M)$
 
-</remark>
+</example>
 
 <theorem>
 
-Let $L\subset T^*Q$ be a nearby Lagrangian with an $R$-brane. In $W(T^*Q, \mathbb{R})$, $L$ is equivalent to an $R$-brane on the zero section.
+Let $L\subset T^*Q$ be a nearby Lagrangian with an $R$-brane. In $\mathcal{W}(T^*Q, \mathbb{R})$, $L$ is equivalent to an $R$-brane on the zero section.
 
 </theorem>
 
@@ -45,8 +47,8 @@ Let $X$ be a subcritical Weinstein domain with $c_1(X)=0=c_2(X)$. Let $\Lambda \
 
 <definition>
 
-1. Consider $W(X, \mathbb{Q})$ where objects are the exact canonical Maslaw Lagrangians with rank 1 local systems and the morphisms are chain complexes built from $M(\between)$.
-2. $W(X, \mathbb{R})$ are where objects are the exact canonical Maslaw Lagrangians with rank 1 local systems R-branes. And morphisms are $R$-module spectra built from $M(\between)$. 
+1. Consider $\mathcal{W}(X, \mathbb{Q})$ where objects are the exact canonical Maslov Lagrangians with rank 1 local systems and the morphisms are chain complexes built from $M(\between)$.
+2. $\mathcal{W}(X, \mathbb{R})$ are where objects are the exact canonical Maslov Lagrangians with rank 1 local systems R-branes and morphisms are $R$-module spectra built from $M(\between)$. 
 
 </definition>
 
@@ -72,15 +74,11 @@ and $W_1$ is this entire map.
 
 Assume that $X$ be a symplectically trivializable space, meaning $TX=\mathbb{C}\otimes \mathbb{R}^n$. 
 
-<definition>
-
-Given $L\subset X$ a Lagrangian, $GL : L\to \mathcal{U}/O$ to be the Lagrangian Grassmannian
-
-</definition>
+Given $L\subset X$ a Lagrangian, denote $\text{GL} : L\to \mathcal{U}/O$ as the Lagrangian Grassmannian.
 
 <definition>
 
-An $R$-brane is a choice of null-homotopy of
+An **$R$-brane** is a choice of null-homotopy of
 $$
 L\stackrel{\text{GL}}{\longrightarrow} \mathcal{U}/O \stackrel{\text{Bott}}{\longrightarrow} B^2(0) \longrightarrow B^2 \text{GL}_1(R).
 $$
@@ -92,19 +90,17 @@ $$
 1. $R$-branes correspond to $[L, B \text{GL}_1(R)]$ which are rank 1 local systems. 
 2. $R=H\mathbb{Z}, [L, B\text{GL}_1(H\mathbb{Z})] = [L, B\mathbb{Z}/2 ]$ are rank 1 local systems. 
 3. Let $M_L=\{(D, \partial D) \to (X,L)| \overline{\partial} u=0, \text{ based} \}$. We want 
-$$
-\text{add this diagram later}
-$$
-<!-- \[\begin{tikzcd}
-	{\mathcal{M}_L} & BO & {BGL_1(R)} \\
-	{\Omega L} & {\Omega \mathcal{U}/O}
-	\arrow["{T\mathcal{M}_L}", from=1-1, to=1-2]
+\[\begin{tikzcd}
+	{\mathcal{M}_L} & {\text{BO}} & {\text{BGL}_1(R)} \\
+	{\Omega_L} & {\text{BGL}_1(R)}
+	\arrow["{\text{T}\mathcal{M}_L}", from=1-1, to=1-2]
 	\arrow[from=1-1, to=2-1]
 	\arrow[from=1-2, to=1-3]
-	\arrow["{*}"', shift right, curve={height=30pt}, from=2-1, to=1-3]
-	\arrow["{\Omega G_L}"', from=2-1, to=2-2]
-	\arrow["{\text{Bott Periodicity}}"', from=2-2, to=1-2]
-\end{tikzcd}\] -->
+	\arrow["{*}"', curve={height=30pt}, from=2-1, to=1-3]
+	\arrow["{\Omega \text{GL}}", from=2-1, to=2-2]
+	\arrow["{\text{Bott}}", from=2-2, to=1-2]
+\end{tikzcd}\]
+where the left square commutes.
 
 </remark>
 
@@ -121,15 +117,12 @@ $$
 $$
 3. Change of coefficients: consider $S$ a module over $R$. Then we have 
     $$
-    W(X, S) = W(X,R) \wedge_R S
+    \mathcal{W}(X, S) = \mathcal{W}(X,R) \wedge_R S
     $$
 
 </proposition>
 
-Notation:
-1. $R$ is connective 
-2. $\pi_0(R)=K$ is discrete 
-3. The Hurwitz map $\text{Hw}: R\to \text{HK}$ that is $\mathbb{1}$ on $\pi_0$. 
+From now on, assume that $R$ is connective, $\pi_0(R)=K$ is discrete, and the Hurwitz map $\text{Hw}: R\to \text{HK}$ is $\mathbb{1}$ on $\pi_0$. 
 
 <proposition>
 
@@ -139,17 +132,16 @@ Let $M, M'$ be connected $R$-module spectra.
     $$
     Then $M=R$.
 2. If 
-INSERT THIS LATER
-    <!-- \[\begin{tikzcd}
-	M && {M'} \\
+\[\begin{tikzcd}
+	M &&& {M'} \\
 	\\
-	{M\wedge_R \text{HK}} && {M' \wedge_R \text{HK}}
-	\arrow["f", from=1-1, to=1-3]
-	\arrow["{\text{H}_W}", from=1-1, to=3-1]
-	\arrow["{\text{H}_W}", from=1-3, to=3-3]
-	\arrow["{H_n(f)}"', from=3-1, to=3-3]
-    \end{tikzcd}\] -->
-    then $\text{Hw}(f)$ are equiv implies $f$ is an equiv.
+	{M\wedge_R \text{HK}} &&& {M'\wedge_R \text{HK}}
+	\arrow["f", from=1-1, to=1-4]
+	\arrow["{\text{Hw}}"', from=1-1, to=3-1]
+	\arrow["{\text{Hw}}", from=1-4, to=3-4]
+	\arrow["{H_n(f)}"', from=3-1, to=3-4]
+\end{tikzcd}\]
+    then $\text{Hw}(f)$ are equivalent implies $f$ is equivalent.
 
 </proposition>
 
@@ -227,8 +219,8 @@ $f:\hat{X}\to X$ such that $\hat{f}(\hat{L}) = [L\cup_\Lambda C]$. We have $0=f(
 
 1. The obstruction to $M\text{Spin}$-brane is cohomology. But we can take $\pi_1(L)=0, w_2(L)=0, H_3(L, \mathbb{Z}/2)=0$
 
-2. $\hat{X}=\text{subcritical handles} \cup T^*S^n \implies W(\hat{X}, R) \cong W(T^*S^n, R)$.
-3. Similarly, $\hat{L}\cong \hat{C}$ in $W(\hat{W}, R)$.
+2. $\hat{X}=\text{subcritical handles} \cup T^*S^n \implies \mathcal{W}(\hat{X}, R) \cong \mathcal{W}(T^*S^n, R)$.
+3. Similarly, $\hat{L}\cong \hat{C}$ in $\mathcal{W}(\hat{W}, R)$.
 4. $\text{HW}(L, L, R)\to H_n(\hat{X}, R) =\Omega_n^{\text{spin}}(\hat{X})$.
 
 </proof>

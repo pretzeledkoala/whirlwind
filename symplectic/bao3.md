@@ -6,12 +6,12 @@
     <p>August 19</p>
 </whirlheader>
 
-Suppose $(W,\,d\alpha)$ is an exact symplectic manifold with $\partial W=W_+ + W_-, \alpha|_{W_\pm}=W_{\pm}$, and $J$ an almost complex surface on $\hat{W}$. counts of $\text{ind}=0$ $J$-holomorphic cylinders. This gives a chain map
+Suppose $(W,\,d\alpha)$ is an exact symplectic manifold with $\partial W=W_+ + W_-, \alpha|_{W_\pm}=W_{\pm}$, and $J$ an almost complex surface on $\hat{W}$. To count $\text{ind}=0$ $J$-holomorphic cylinders, we obtain chain map
 $$
 \Phi: c_*(W_+, \alpha_+, J_+) \to c_*(w_-, \alpha_-, J_-)
 $$
 
-Given a 1-parameter family of this data $(W^2, \,d\alpha^2, J^2)$ we want $ \Phi_0 < \Phi_1$ induce the same map on homology 
+Given a 1-parameter family of this data $(W^2, \,d\alpha^2, J^2)$ we want $ \Phi_0 < \Phi_1$ to induce the same map on homology:
 $$
 \mathcal{M}(\gamma_+, \gamma_-) = \bigsqcup_\iota \{ \iota \}\times \mathcal{M}_{J^2}^{\text{ind}=0} (\gamma_+, \gamma_-).
 $$
@@ -39,7 +39,7 @@ An **interior semi-global Kuranishi chart** is a quadruple?? $(K, \pi_v: E\to V,
 
 </definition>
 
-We order the moduli space $\mathcal{M}_1, \mathcal{M}_2,...$ such that the energey increase. Let 
+We order the moduli space $\mathcal{M}_1, \mathcal{M}_2,...$ such that the energy increase. Let 
 $$
 \mathcal{M}_i=\mathcal{M}(p_i, q_i), \qquad E(\mathcal{M}_i)=f(p_i)-f(q_i).
 $$

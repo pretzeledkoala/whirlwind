@@ -28,9 +28,13 @@ Historically, these $H$'s were called energy surfaces.
 
 </remark>
 
-Fix $s\in \text{Reg}(H) \implies H^{-1}(S)$ is a smooth $(2n-1)$-dimensional manifold. We call energy surfaces that arise this way **regular**.
+<definition>
 
-## Invariant Sets 
+Fix $s\in \text{Reg}(H)$. Then $ H^{-1}(S)$ is a smooth $(2n-1)$-dimensional manifold. Energy surfaces that arise this way are called **regular**.
+
+</definition>
+
+# Invariant Sets 
 
 <problem>
 <src>Herman, 1998 ICM</src>
@@ -48,10 +52,22 @@ Yes for $n=2$.
 
 <remark>
 
-- <src>Weinstein, Rabinowitz, Viledo</src>: When $Y$ is contact type, it contains a closed orbit 
-- Examples exist where $Y$ has no closed orbits: <src>Ginzberg, Kerman, Herman</src> for $n\ge 3$, <src>Ginzburg, Gurel</src> for $n\ge 2, H$ is $C^2$
+Here is some more progress on the problem:
 
-</remark>
+<theorem>
+<src>Weinstein, Rabinowitz, Viledo</src>
+
+When $Y$ is contact type, it contains a closed orbit 
+
+</theorem>
+
+<theorem>
+
+Examples exist where $Y$ has no closed orbits: 
+    - <src>Ginzberg, Kerman, Herman</src> for $n\ge 3$
+    - <src>Ginzburg, Gurel</src> for $n\ge 2, H$ is $C^2$
+
+</theorem>
 
 <theorem>
 <src>Prasad, 2024; Theorem A</src>
@@ -63,7 +79,7 @@ Let $H: \mathbb{R}^{n} \to \mathbb{R}$, $Y$ be a compact regular energy surface.
 Notation: $\text{Reg}_C(J)=\{ s\in \text{Reg}(H)| H^{-1}(s)\text{ compact} \}$.
 
 <theorem>
-<src>Theorem A'</src>
+<src>Theorem B</src>
 
 Let $H': \mathbb{R}^{2n} \to \mathbb{R}$ for almost every $s\in \text{Reg}_c(H)$. $H'(s)$ has the following property: for any closed orbit $\Lambda \subset H^{-1}(s)$, $H^{-1}(s)/\Lambda$ is not minimal.
 
@@ -75,7 +91,7 @@ The Le Calvez-Yoccoz property implies dense existence on invariant sets.
 
 </remark>
 
-## Closed Orbits 
+# Closed Orbits and Closed Holomorphic Curves
 
 <theorem>
 <src>Hofer, Zehnder, 1987</src>
@@ -86,7 +102,7 @@ Fix $H:\mathbb{R}^{2n} \to \mathbb{R}$. For about every energy surface $s\in \te
 
 <theorem>
 
-Fix $H:\mathbb{R}^{2n} \to \mathbb{R}$. For almost every $s\in \text{Reg}_c H$, $H^{-1}(s)$ contains two closed orbits. This bound is sharp.
+Fix $H:\mathbb{R}^{2n} \to \mathbb{R}$. Almost every $s\in \text{Reg}_c H$, $H^{-1}(s)$ contains two closed orbits. This bound is sharp.
 
 </theorem>
 
@@ -108,25 +124,21 @@ Fix $H:\mathbb{R}^4\to \mathbb{R}$. Under $C^\infty$-generic conditions on $H$, 
 
 <proof>
 
-Follows from a strictly stronger version of Theorem A' and known results about generic Hamiltonians.
+Follows from a strictly stronger version of Theorem B and known results about generic Hamiltonians.
 
 </proof>
-
-# Closed Holomorphic Curves 
-
-Fix $H: \mathbb{CP}^2 \to \mathbb{R}$. 
 
 <theorem>
 <src>Taubes</src>
 
-Fix base $J, J\ge 1, S\subset \mathbb{CP}^2$ such that $\# S \approx \lambda^2$. Then there exists a closed $J$-holomorphic curve $u: C\to \mathbb{CP}^2$ such that 
+Fix $H: \mathbb{CP}^2 \to \mathbb{R}$. Fix base $J, J\ge 1, S\subset \mathbb{CP}^2$ such that $\# S \approx \lambda^2$. Then there exists a closed $J$-holomorphic curve $u: C\to \mathbb{CP}^2$ such that 
 1. $S=u(C)$
 2. $\int_C u\Omega = d$
 3. $\chi(C)\sim -d^2$
 
 </theorem>
 
-# Theorem A 
+# Theorem A Proof Idea
 
 Take 
 $$

@@ -20,22 +20,19 @@ A **framed Hamiltonian structure** is a pair $(\lambda,\omega)$ where $\lambda$ 
 
 <example>
 
-Let $\lambda$ be a contact form, $\omega =\,d\lambda$. 
-
-- The mapping torus is a symplectic automorphism $\phi: (M^{2n}, \omega) \to (M^{2n}, \omega)$. We have 
-$$
-Y=M^{2n}\times [0,1]/\sim
-$$
-where $(x,1) \sim (\phi(x), 0)$
-<!-- given by the pair $(dt, \omega)$. -->
+- Let $\lambda$ be a contact form, $\omega =\,d\lambda$. The mapping torus is a symplectic automorphism $\phi: (M^{2n}, \omega) \to (M^{2n}, \omega)$. We have 
+    $$
+    Y=M^{2n}\times [0,1]/\sim
+    $$
+    where $(x,1) \sim (\phi(x), 0)$. The pair $(dt, \omega)$ is a framed Hamiltonian structure. 
 
 - Suppose we have a proper Hamiltonian $H:(M^{2n}, \omega) \to R$. Suppose we have a regular value $c$. Then $H^{-1}(c)$ is a framed Hamiltonian structure.
 
-- Non-singular volume preserving flows on a closed 3-manifold. 
+- Non-singular volume preserving flows on a closed 3-manifold are framed Hamiltonian structures.
 
 </example>
 
-Let $(\lambda, \omega)$ is a Hamiltonian vector field. We have $R$ satisfying $\omega(R, \cdot)=0, \lambda(R)=1$.
+Let $(\lambda, \omega)$ is a Hamiltonian vector field. Suppose we have $R$ satisfying $\omega(R, \cdot)=0, \lambda(R)=1$.
 
 <example>
 
@@ -70,11 +67,11 @@ $L(u_*)$ is a connected.
 </proposition>
 
 We have the following classical quantities associated to $u$:
-- the action 
+- The action 
     $$
     \mathcal{A}(u) = \int_C u^* \omega
     $$
-- the Hofer energy 
+- The Hofer energy 
     $$
     \mathcal{E}(u)=\sup_{s\in \mathbb{R}} \int_{C\cap u^{-1}(\{s\}\times Y)} u^*\lambda
     $$
@@ -95,9 +92,7 @@ The main novelty is that there is no bound required on the Hofer energy $\mathca
 
 # Dynamical Applications 
 
-The upshot is that the theorem widely applicable in low dimensions. In higher dimensions, problems are more open.
-
-## Le Calvez-Yoccoz Theorems
+The upshot is that the theorem widely applicable in low dimensions. In higher dimensions, problems are more open. In particular, they are very important in relation to the Le Calvez-Yoccoz Theorems
 
 <definition>
 <src>Birkhoff</src>
@@ -106,12 +101,12 @@ A dynamical system $Y$ is **minimal** if every orbit is dense.
 
 </definition>
 
-One motivation is that if $Y$ is not minimal, we can write $Y=k \cap (Y-k)\$$ where $k$ is a non-trivial invariant set.
+One motivation is that if $Y$ is not minimal, we can write $Y=k \cap (Y-k)$ where $k$ is a non-trivial invariant set.
 
 <problem>
 <src>Ulam</src>
 
-Is there a minimal homeomorphism of $\mathbb{R}^n$ or $\mathbb{R}^n - \{p\}$.
+Is there a minimal homeomorphism of $\mathbb{R}^n$ or $\mathbb{R}^n - \{p\}$?
 
 </problem>
 
@@ -161,7 +156,7 @@ Any geodesic flow on a surface has the property that a dense set of points have 
 
 ## Finding Low Action Curves of Controlled Topology
 
-Uses the embedded contact homology $\text{ECH}$. For $(Y, \lambda)$ a closed 3-manifold, $\text{ECH}(Y,\lambda)$ is a homology of a cochain complex that counts (mostly) embedded curves. 
+This part of the proof uses the embedded contact homology $\text{ECH}$. For $(Y, \lambda)$ a closed 3-manifold, $\text{ECH}(Y,\lambda)$ is a homology of a cochain complex that counts (mostly) embedded curves. 
 
 <theorem>
 
@@ -171,8 +166,7 @@ $$
 
 </theorem>
 
-- There exists a map $u: \text{ECH}\to \text{ECH}$ bounding curves through a marked point
-- The Weyl law allows us to use the $u$-map to produce low action curves
+There exists a map $u: \text{ECH}\to \text{ECH}$ bounding curves through a marked point and the Weyl law allows us to use the $u$-map to produce low action curves
 
 <problem>
 
@@ -180,8 +174,17 @@ How do we bound $X_\pi(C_k)?$
 
 </problem>
 
-There is no bound a priori on the genus. <src>Cristofaro-Gardiner, Prasad</src> show that $x_k(C_k)\ge -2$.
+There is no bound a priori on the genus.
+
+<theorem>
+<src>Cristofaro, Gardiner, Prasad</src>
+
+$$
+x_k(C_k)\ge -2.
+$$
+
+</theorem>
 
 ## Proving the Compactness Theorem
 
-The main point is a new estimate that bounds of $C$ in a small ball if $C$ is low action in terms of $\chi(C)$
+The main point is a new estimate that bounds of $C$ in a small ball if $C$ is low action in terms of $\chi(C)$.

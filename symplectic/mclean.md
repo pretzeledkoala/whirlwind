@@ -6,11 +6,11 @@
     <p>August 19</p>
 </whirlheader>
 
-# Symplectic Orbifold GW Invariants 
+# Introduction
 
-The aim is to construct $\partial W$ invariants for orbifolds. Over $\mathbb{Q}$, this was done by <src>Chen, Ruan</src>. We want to use global Kuranishi charts. This is part of a larger project proving a version of the crepant resolution conjecture. There is also work by <src>Mak, Seytoddin, Smith</src> are working on the global quotient case. This talk is all joint work with <src>Ritter</src>.
+The aim is to construct $\partial W$ invariants for orbifolds. Over $\mathbb{Q}$, this was done by <src>Chen, Ruan</src>. We want to use global Kuranishi charts. This is part of a larger project proving a version of the crepant resolution conjecture. There is also work by <src>Mak, Seyfaddini, Smith</src> are working on the global quotient case. This talk is all joint work with <src>Ritter</src>.
 
-An orbifold is like a manifold, but the charts look like $V/\Gamma$ where $V\subset \mathbb{R}^n$ is an open finite subset, $\Gamma \to \text{GL}_n(\mathbb{R})$. For example, $\{\text{pt}\}/\mathbb{Z}/2$ is an orbifold. 
+Informally, an orbifold is like a manifold, but the charts look like $V/\Gamma$ where $V\subset \mathbb{R}^n$ is an open finite subset, $\Gamma \to \text{GL}_n(\mathbb{R})$. For example, $\{\text{pt}\}/\mathbb{Z}/2$ is an orbifold. We will not define an orbifold formally.
 
 Suppose $G$ is a compact Lie group acting on a smooth manifold $M$ with finite stabilizers. Then the quotient $[M/G]$ is naturally an orbifold.
 
@@ -61,6 +61,9 @@ If $X=[M/G]$ is an orbifold, then $\underline{X}=M/G$ is the **underlying coarse
 
 </definition>
 
+
+# Twisted Nodal Curves
+
 Let's fix $(X,\omega, J)$ where $X$ is an orbifold, $\omega$ is a symplectic form, and $J$ is a $J$-taming almost complex structure. Take $\beta \in H_2(\underline{X}, \mathbb{Z})$.
 
 <definition>
@@ -92,6 +95,8 @@ A **twisted nodal curve** $U:\Sigma \to X$ is a $J$-holomorphic Hilsum-Scandalis
 <src>Abramovich, Vistoli</src> studied the example $\{\text{pt}\}/\,\mathbb{Z}/2=X$.
 
 For smooth $g=0$ case, Sieburt considered $(u, \Sigma, F)$ where $u: \Sigma \to X$, $L\to X$, and the framing is a basis of $H^0(u^*L)$. Then, we obtain $\mathcal{E}\to \mathbb{P}^d$ where $d=\dim H^0(u^*L)-1$ and $\mathcal{F}=\mathcal{M}_{0,d}(\mathbb{P}^n)$.
+
+# Problems
 
 There are many problems with generalizing this $g=0$ case to the smooth orbifold case:
 1. For higher genus curves, there is a moduli space of line bundles in each given degree 

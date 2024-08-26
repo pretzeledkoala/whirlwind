@@ -11,12 +11,12 @@
 Here are some examples of questions that symplectic geometers care about:
 1. Suppose $X(\vec{r})$ and $Y(\vec{s})$ are symplectic manifolds depending on parameters $\vec{r}$ and $\vec{s}$. For what values of $\vec{r}$ and $\vec{s}$ do there exist symplectic embeddings $X(\vec{r})\hookrightarrow Y(\vec{s})$?  For example, do there exist symplectic embeddings $X(\vec{r})\hookrightarrow Y(\vec{s})$ where 
     $$
-    X(\vec{r}) = X(a)=B^{2n}(a)=\left\{ (\vec{x}, \vec{y})\in \mathbb{R}^{2n} \mid \pi \sum(x_j^2+y_j^2) \le a \right\} \\
-    Y(\vec{s}) = Y(s_1,...,s_n)= E^{2n}(s_1,...,s_n) = \left\{ (\vec{x}, \vec{y}) \in \mathbb{R}^{2n} \mid \pi \sum \dfrac{(x_j^2+y_j^2)}{s_j}\le 1 \right\}
+    X(\vec{r}) = X(a)=B^{2n}(a)=\left\{ (\vec{x}, \vec{y})\in \mathbb{R}^{2n} \mid  \pi \sum(x_j^2+y_j^2) \le a \right\} \\
+    Y(\vec{s}) = E^{2n}(s_1,...,s_n) = \left\{ (\vec{x}, \vec{y}) \in \mathbb{R}^{2n} \mid  \pi \sum \dfrac{(x_j^2+y_j^2)}{s_j}\le 1 \right\}
     $$
     with $a>0$?
 2. If $X\subset \mathbb{R}^{2n}$ is a domain with contact type boundary, what can be said about the action of closed characteristics on $\partial X$? What is the connection between this question and the previous one? 
-3. For $\phi: M\to M$ a Hamiltonian diffeomorphism, what happens to the actions of fixed points of $\phi^k$, denoted $\# \text{Fix}\left(\phi^k\right)$, and the norm $||\phi^k||_{\text{Hofer}}$ as $k\to \infty$?
+3. For $\phi: M\to M$ a Hamiltonian diffeomorphism, what happens to the actions of fixed points of $\phi^k$, denoted $\# \text{Fix}\left(\phi^k\right)$, and the Hofer norm $\mid \mid \phi^k\mid \mid _{\text{Hofer}}$ as $k\to \infty$?
 
 For the rest of this talk, we will mostly focus on the first question, partially because the first result that got mathematicians interested in studying quantitative symplectic geometry arose from this problem.
 
@@ -25,17 +25,17 @@ For the rest of this talk, we will mostly focus on the first question, partially
 
 Let
 $$
-B^{2n}(a) = \left\{ (\vec{x}, \vec{y}) \in \mathbb{R}^{2n} | \pi \sum (x_j^2+y_j^2) \le a\right\}
+B^{2n}(a) = \left\{ (\vec{x}, \vec{y}) \in \mathbb{R}^{2n} \mid  \pi \sum (x_j^2+y_j^2) \le a\right\}
 $$
 and 
 $$
-Z^{2n}(A) = \left\{ (\vec{x}, \vec{y}) \in \mathbb{R}^{2n} | \pi(x_j^2+y_j^2) \le A \right\}=B^2(A) \times \mathbb{R}^{2n-2}.
+Z^{2n}(A) = \left\{ (\vec{x}, \vec{y}) \in \mathbb{R}^{2n} \mid  \pi(x_j^2+y_j^2) \le A \right\}=B^2(A) \times \mathbb{R}^{2n-2}.
 $$
 Then there exists a symplectic embedding $B^{2n}(a) \hookrightarrow Z^{2n}(A)$ only if $a\le A$.
 
 </theorem>
 
-Basically, this result tells us that we cannot "squeeze" a ball into a cylinder of smaller radius while preserving the symplectic structure.
+Basically, this result tells us that we cannot squeeze a ball into a cylinder of smaller radius while preserving the symplectic structure.
 
 # Proof of Gromov's Non-Squeezing Theorem
 
@@ -47,15 +47,15 @@ Choose $L$ such that $\text{Im}(\phi) \subset B^2(A)\times (-L,L)^{2n-2}$. Regar
 
 There are 2 key facts:
 
-1. For any $\omega$-compatible almost complex structure $J$ on $M$, there exists a $J$-holomorphic map $u:S^2 \to M$ such that $\phi(\vec{0})\subset \text{Im}(u)$ and $u_*[S^2]=[S^2\times \{\text{pts}\}] \in H_c(M)$. In particular, this applies to $J$'s agreeing on $\phi(B^{2n}(a-\frac{\epsilon}{2}))$ with $\phi_*J_0$, where $J_0$ is the standard complex structure on $B^{2n}(u-\frac{\epsilon}{2})$. 
+1. For any $\omega$-compatible almost complex structure $J$ on $M$, there exists a $J$-holomorphic map $u:S^2 \to M$ such that $\phi\left(\vec{0}\right)\subset \text{Im}(u)$ and $u_*[S^2]=[S^2\times \{\text{pts}\}] \in H_c(M)$. In particular, this applies to $J$'s agreeing on $\phi(B^{2n}(a-\frac{\epsilon}{2}))$ with $\phi_*J_0$, where $J_0$ is the standard complex structure on $B^{2n}(u-\frac{\epsilon}{2})$.
 2. For a $J_0$-holomorphic map $v: \sum \to B^{2n}(c)$ where $\sum$ is a compact surface with boundary and $c \in (a - \epsilon, a - \frac{\epsilon}{2})$ such that $v(\partial \sum) \subset \partial B^{2n}(c)$ and $\vec{0} \subset \text{Im}(v)$, then $\text{Area}(v) \ge c$.
 
-Together, these two facts prove the desired claim: assuming we have both key facts, for generic $c \in (a-\frac{\epsilon}{2}, a-\epsilon)$, take $\sum u^{-1}(\phi(B^{2n}(c)))$ and take $v:\sum \to B^{2n}(c)$ with $v= \phi^{-1} \cdot u|_\Sigma$. Then
+Together, these two facts prove the desired claim: assuming we have both key facts, for generic $c \in (a-\frac{\epsilon}{2}, a-\epsilon)$, take $\sum u^{-1}(\phi(B^{2n}(c)))$ and take $v:\sum \to B^{2n}(c)$ with $v= \phi^{-1} \cdot u\mid _\Sigma$. Then
 
 $$
 \begin{align*}
 c&\le a-\dfrac{\epsilon}{2} \\
-&\le \text{Area}(v) = \int_\Sigma v^*\omega_0= \int_\Sigma u^*\omega=\text{Area}(u|_\Sigma) \\
+&\le \text{Area}(v) = \int_\Sigma v^*\omega_0= \int_\Sigma u^*\omega=\text{Area}(u\mid _\Sigma) \\
 & \le \text{Area}(u) = A+\epsilon \\
 \end{align*}
 $$
@@ -64,7 +64,10 @@ The idea of the proof of $(1)$ is as follows:
 
 <proof>
 
-For any $\omega$-compatible $J$, consider $M_J = \left\{ u:S^2 \to M | u_*[S^2]=S^2 \times \{ \text{pt}\}, U(0,0,1) = \phi(u(\vec{0}))\right\}$.
+For any $\omega$-compatible $J$, consider 
+$$
+M_J = \left\{ u:S^2 \to M \mid  u_*[S^2]=S^2 \times \{ \text{pt}\}, U(0,0,1) = \phi\left(u\left(\vec{0}\right)\right)\right\}.
+$$.
 
 If $J$ is the standard complex structure $J_0$, $M_{J_0}$ has one element. For contradiction, suppose $M_{J_1} = \phi$. For a generic path $\{J_t\}_{0\le t \le 1}$, 
 $$

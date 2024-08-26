@@ -31,8 +31,8 @@ which together induce a virtual fundamental class for $\overline{\mathcal{M}}$:
 
 $$
 \begin{align*}
-\widecheck{H}^*(\overline{\mathcal{M}}, \mathbb{Q}) &\stackrel{\text{Poincaré Duality}}{\longrightarrow}H_{\text{rank } \mathcal{E}} (\mathcal{T}/G, \mathcal{T}/g - \overline{\mathcal{M}}, \mathbb{Q}) = H_{\text{rank } \mathcal{E}}^G (\mathcal{T}- \mathcal{T}-s^{-1}(0), \mathbb{Q}) \\
-&\stackrel{s_*}{\longrightarrow} H_{\text{rank }\mathcal{E}}^G (\mathcal{E}, \mathcal{E}- 0_{\mathcal{E}}, \mathbb{Q}) \\
+\widecheck{H}^*(\overline{\mathcal{M}}, \mathbb{Q}) &\stackrel{\text{Poincaré Duality}}{\longrightarrow}H_{\text{rank } \mathcal{E}} (\mathcal{T}/G; \mathcal{T}/g - \overline{\mathcal{M}}, \mathbb{Q}) = H_{\text{rank } \mathcal{E}}^G (\mathcal{T}- \mathcal{T}-s^{-1}(0); \mathbb{Q}) \\
+&\stackrel{s_*}{\longrightarrow} H_{\text{rank }\mathcal{E}}^G (\mathcal{E}, \mathcal{E}- 0_{\mathcal{E}}; \mathbb{Q}) \\
 &\stackrel{\tau_{\mathcal{E}}^G}{\longrightarrow} H_0^G(\text{pt}, \mathbb{Q})\cong \mathbb{Q}
 \end{align*}
 $$
@@ -56,7 +56,7 @@ This should be thought of as an analog of the Reidemeister moves.
 
 # Complex Geometry Background 
 
-On $\mathbb{CP}^1$, we have the tautological line bundle $\mathcal{O}(-1)\hookrightarrow \mathbb{CP}^n \times \mathbb{C}^{n+1}$, which has a dual $\mathcal{O}(1)$, and we define $\mathcal{O}(k) = \mathcal{O}(1)^{\otimes k}$. 
+On $\mathbb{CP}^1$, we have the tautological line bundle $\mathcal{O}(-1)\hookrightarrow \mathbb{CP}^n \times \mathbb{C}^{n+1}$, which has a dual $\mathcal{O}(1)$. Define $\mathcal{O}(k) = \mathcal{O}(1)^{\otimes k}$. 
 
 ## Holomorphic Line Bundles on Curves (Riemann Surfaces)
 
@@ -68,7 +68,8 @@ Suppose $\Sigma$ is a Riemann surface, $L\to \Sigma$ is a $C^\infty$ complex lin
 
 <proof>
 
-Given $p\in \Sigma$. Choose a $C^\infty$ section $\tau$ of $L$ defined near $p$ such that $\tau(p)\neq 0$. 
+Given $p\in \Sigma$, choose a $C^\infty$ section $\tau$ of $L$ defined near $p$ such that $\tau(p)\neq 0$. Then 
+
 <center>
 
 $$
@@ -79,7 +80,7 @@ $$
 
 where $g\in \Omega^{0,1}(\Sigma)$.
 
-The $\overline{\partial}$-Poincaré lemma states that we can find a $C^\infty$-function such that $g=\overline{\partial}f$ near $p$. Define $\sigma = e^{-f}\tau$, and we have 
+The $\overline{\partial}$-Poincaré lemma states that we can find a $C^\infty$-function such that $g=\overline{\partial}f$ near $p$. Define $\sigma = e^{-f}\tau$, and we have
 <center>
 
 $$
@@ -102,7 +103,7 @@ Suppose $\Sigma$ is a nodal genus $0$ curve. Then the isomorphism class of a hol
 
 <corollary>
 
-Consider $L\to \Sigma$ as above. Suppose $L$ has total degree $d$ and has degree $\ge 0$ on each component. Then $\dim H^0(\Sigma, L) = d+1$ and $\dim_{\mathbb{C}} H^1(\Sigma, L)=0$.
+Consider $L\to \Sigma$ as above. Suppose $L$ has total degree $d$ and has degree $\ge 0$ on each component. Then $\dim H^0(\Sigma; L) = d+1$ and $\dim_{\mathbb{C}} H^1(\Sigma; L)=0$.
 
 </corollary>
 
@@ -128,7 +129,7 @@ This space is a complex orbifold of the expected dimension.
 
 <proof>
 
-Take $f:\Sigma \to \mathbb{P}^n$ where $\Sigma$ is a genus $0$ nodal curve. Recall $D_f: \Omega^0(\Sigma, f^*T \mathbb{CP}^n)\to \Omega^{0,1}(\Sigma)$. We want to show that this is surjective, which is equivalent to $\text{coker}D_f = H^1(\Sigma, f^* T \mathbb{CP}^n )$. We have the Euler exact sequence: 
+Take $f:\Sigma \to \mathbb{P}^n$ where $\Sigma$ is a genus $0$ nodal curve. Recall $D_f: \Omega^0(\Sigma, f^*T \mathbb{CP}^n)\to \Omega^{0,1}(\Sigma)$. We want to show that this is surjective, which is equivalent to $\text{coker}D_f = H^1(\Sigma; f^* T \mathbb{CP}^n )$. We have the Euler exact sequence: 
 <center>
 
 $$
@@ -141,7 +142,7 @@ If we pullback along $f:\Sigma \to \mathbb{CP}^n$ and take long exact sequence
 <center>
 
 $$
-\longrightarrow H^1(\Sigma, f^* \mathcal{O})^{\oplus n+1}\longrightarrow H^1(\Sigma, f^*T \mathbb{CP}^n) \to 0
+\longrightarrow H^1(\Sigma; f^* \mathcal{O})^{\oplus n+1}\longrightarrow H^1(\Sigma; f^*T \mathbb{CP}^n) \to 0
 $$
 
 </center>
